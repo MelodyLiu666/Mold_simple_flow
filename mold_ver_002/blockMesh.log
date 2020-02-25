@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : blockMesh
+Date   : Feb 25 2020
+Time   : 11:41:53
+Host   : "DESKTOP-G4K9PBL"
+PID    : 1135
+I/O    : uncollated
+Case   : /home/xiaoyu/Workspace_xiaoyu/gitHub/simple_straight_nozzle_mold_flow/Mold_simple_flow/mold_ver_001
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Deleting polyMesh directory
+    "/home/xiaoyu/Workspace_xiaoyu/gitHub/simple_straight_nozzle_mold_flow/Mold_simple_flow/mold_ver_001/constant/polyMesh"
+Creating block mesh from
+    "/home/xiaoyu/Workspace_xiaoyu/gitHub/simple_straight_nozzle_mold_flow/Mold_simple_flow/mold_ver_001/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 8
+        j : 8
+        k : 6.25
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-50 -50 0) (110 110 1000)
+  nPoints: 71001
+  nCells: 64000
+  nFaces: 198800
+  nInternalFaces: 185200
+----------------
+Patches
+----------------
+  patch 0 (start: 185200 size: 400) name: topPatch
+  patch 1 (start: 185600 size: 12800) name: fixedWalls
+  patch 2 (start: 198400 size: 400) name: bottomOutflowPatch
+
+End
+

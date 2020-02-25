@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7
+Exec   : createPatch -overwrite
+Date   : Feb 25 2020
+Time   : 11:43:28
+Host   : "DESKTOP-G4K9PBL"
+PID    : 1138
+I/O    : uncollated
+Case   : /home/xiaoyu/Workspace_xiaoyu/gitHub/simple_straight_nozzle_mold_flow/Mold_simple_flow/mold_ver_001
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading createPatchDict
+
+Adding new patch inletPatch as patch 4 from 
+{
+    type            patch;
+}
+
+Adding new patch topOutflowPatch as patch 5 from 
+{
+    type            patch;
+}
+
+Adding new patch nozzlePatch as patch 6 from 
+{
+    type            wall;
+}
+
+
+Read 2640 faces from faceSet inletPatch
+Read 3952 faces from faceSet topOutflowPatch
+Read 60666 faces from faceSet nozzlePatch
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removing zero-sized patch mold type wall at position 3
+Removing patches.
+Writing repatched mesh to 0
+
+End
+
